@@ -1,4 +1,52 @@
-List of commands used to get resutls from FELICS framework
+# List of commands used to get results from FELICS framework
+# Only setup included for AVR (8-bit) and MSP (16-bit) microcontrollers 
+# ARM (32-bit) requires Arduino Due board & J-Link debug probe to extract results so will not be included here
+
+SETUP - from scratch
+
+# making folder named 'ubuntu' for working in 
+mkdir ubuntu
+
+# installing generic updates for Ubuntu
+sudo apt-get update
+
+# installing pre-requisites compilers
+# AVR
+sudo apt-get install gcc-avr
+
+# MSP
+sudo apt-get install gcc-msp430
+
+# installing pre-requisites tools
+# AVR
+sudo apt-get install gdb-avr avr-libc libelf-dev gtkwave build-essential freeglut3-dev default-jre default-jdk
+sudo apt-get install simavr
+
+# MSP
+sudo apt-get install libusb-dev mspdebug gdb-msp430
+
+# download FELIC.zip and extract all into the 'ubuntu' folder so that there is now a 'FELICS' folder in 'ubuntu'
+# starting with the block ciphers
+# navigate to FELCS/block_ciphers/scripts/constants/common
+./build.sh
+
+#navigate to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    PRESENT
 
