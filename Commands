@@ -60,14 +60,8 @@ _____________
   #define READ_SBOX2_WORD READ_RAM_DATA_WORD
 
 
-
-
-
-
-
-
-
-
+#Making the cipher, navigate to ubuntu/FELICS/block_ciphers/source/ciphers/PRESENT_64_80_V01/source run command
+make -f ./Makefile cipher
 
 //    PRESENT
 
