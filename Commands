@@ -1,0 +1,26 @@
+List of commands used to get resutls from FELICS framework
+
+//    PRESENT
+
+PRESENT for XML output, AVR architecture and scenario 0 
+./collect_ciphers_metrics.sh -f=3 -a=AVR -s=0 -c='PRESENT_64_80_v06' -i=1 
+
+PRESENT for raw table output, AVR architecture and scenario 0 
+./get_results.sh -f=1 -a=AVR -s=0 -c='PRESENT_64_80_v06' -i=1 
+
+
+//    TWINE
+
+
+
+//    TRIVIUM
+
+
+
+
+
+SETUP
+
+1   FELICS/common/config$ ./config.sh #not sure what happened
+
+2   FELICS/block_ciphers/scripts$ ./collect_ciphers_metrics.sh -a='MSP' -s='1' -c='PRESENT_64_80_v06' -f='1'  #genertaing the memory file for MSP_scenario1_memory.mem
