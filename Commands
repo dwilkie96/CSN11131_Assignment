@@ -69,26 +69,15 @@ make -f ./Makefile cipher
 ./check_ciphers.sh --ciphers='PRESENT_64_80_v01' --architectures'PC AVR MSP'
 
 
-//    GETTING RESULTS
+//    GETTING RESULTS 
+#getting cipher metrics for each cipher on PC, scenario 1 and output to CSV file
 
-//    PRESENT
+#   PRESENT - ~/ubuntu/FELICS/block_ciphers/scripts
+./collect_ciphers_metrics.sh --architectures='PC' --scenarios='1' --ciphers='PRESENT_64_80_v01' --format='5'
 
-PRESENT for XML output, AVR architecture and scenario 0 
-./collect_ciphers_metrics.sh -f=3 -a=AVR -s=0 -c='PRESENT_64_80_v06' -i=1 
+#   TWINE
+./collect_ciphers_metrics.sh --architectures='PC' --scenarios='1' --ciphers='TWINE_64_80_v01' --format='5'
 
-PRESENT for raw table output, AVR architecture and scenario 0 
-./get_results.sh -f=1 -a=AVR -s=0 -c='PRESENT_64_80_v06' -i=1 
-
-
-//    TWINE
-
-
-
-//    TRIVIUM
-
-
-
-//    SNOW3G
 
 
 
