@@ -32,7 +32,6 @@ sudo apt-get install libusb-dev mspdebug gdb-msp430
 
 #navigate to 
 
-
 # EDITING FILES IN PRESENT_64_80_V01/source
 # EDIT constants.h
 Add 16 to empty [] for sBox4 & invsBox4
@@ -63,6 +62,15 @@ _____________
 #Making the cipher, navigate to ubuntu/FELICS/block_ciphers/source/ciphers/PRESENT_64_80_V01/source run command
 make -f ./Makefile cipher
 
+//    CHECKING CIPHER BUILDS
+# checking PRESENT as example, will check all scenarios *(currently scenario 0 does not work on AVR and MSP)*
+# navigate to ~/ubuntu/FELICS/block_ciphers/scripts
+
+./check_ciphers.sh --ciphers='PRESENT_64_80_v01' --architectures'PC AVR MSP'
+
+
+//    GETTING RESULTS
+
 //    PRESENT
 
 PRESENT for XML output, AVR architecture and scenario 0 
@@ -80,9 +88,11 @@ PRESENT for raw table output, AVR architecture and scenario 0
 
 
 
+//    SNOW3G
 
 
-SETUP
+
+// testing
 
 1   FELICS/common/config$ ./config.sh #not sure what happened
 
